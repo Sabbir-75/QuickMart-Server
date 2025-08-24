@@ -21,7 +21,7 @@ const client = new MongoClient(uri, {
     serverApi: {
         version: ServerApiVersion.v1,
         strict: true,
-        deprecationErrors: true,
+        deprecationErrors: true
     }
 });
 
@@ -53,9 +53,6 @@ async function run() {
         })
 
 
-
-
-
         await client.db("admin").command({ ping: 1 });
         console.log("Pinged your deployment. You successfully connected to MongoDB!");
     }
@@ -69,5 +66,5 @@ run().catch(console.dir);
 
 
 app.listen(port, () => {
-    console.log(`QuickMart Database is running on ${port}`);
+    console.log(`QuickMart Database is Running on ${port}`);
 })
