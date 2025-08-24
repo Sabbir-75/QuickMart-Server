@@ -63,8 +63,6 @@ async function run() {
 }
 run().catch(console.dir);
 
-
-
 app.listen(port, () => {
     console.log(`QuickMart Database is Running on ${port}`);
 })
